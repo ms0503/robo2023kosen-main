@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "echoCommand": true,
+  "tasks": [
+      {
+          "label": "Build project",
+          "type": "cmake",
+          "command": "build",
+          "problemMatcher": "$gcc",
+          "group": {
+              "kind": "build",
+              "isDefault": true
+          }
+      },
+      {
+          "label": "Clean project",
+          "type": "cmake",
+          "command": "build",
+          "targets": [
+            "clean"
+          ],
+          "problemMatcher": "$gcc",
+          "group": "build"
+      }
+  ]
+}
